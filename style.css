@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 720px;
+  background-image: url("https://duellinksbrasil.com.br/assets/images/bg-top.jpg");
+  background-color: #000000;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Orbitron", sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-logo {
+  width: 100px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.page-title {
+  font-size: 40px;
+  color: white;
+  margin: 5px 0;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 3px 3px 2px black, -3px -3px 2px black, 4px 4px 3px red,
+    -4px -4px 3px red;
+  animation: anima 1.5s ease 1s normal forwards;
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+h2 {
+  font-size: 30px;
+  color: white;
+  margin: 5px 0;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 3px 3px 2px black, -3px -3px 2px black, 4px 4px 3px red,
+    -4px -4px 3px red;
+  animation: anima 1.5s ease 2.5s normal forwards;
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+@keyframes anima {
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-family: "Orbitron", sans-serif;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transition: transform 0.3s;
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+h3 {
+  color: white;
+}
+
+#carta-jogador {
+  width: 360px;
+  height: 500px;
+  overflow: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+#carta-jogador h3 {
+  text-align: center;
+}
+
+.carta-imagem {
+  border: 1px solid black;
+  height: 50px;
+  margin: 10px;
+}
+
+.carta-imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.carta-status {
+  height: 160px;
+  margin: 1.5rem;
+}
+
+.carta-status input {
+  margin: 20px 10px;
+}
+
+.opcoes {
+  color: white;
+}
+
+.resultado {
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  animation: animaresu 1.4s linear infinite alternate-reverse;
+  margin: 5px 0;
+}
+
+@keyframes animaresu {
+  to {
+    transform: scale(1.3);
+  }
+}
+
+#vitoriaDerrota {
+  color: white;
+}
+
+#carta-maquina {
+}
+
+#carta-jogador,
+#carta-maquina {
+  width: 230px;
+  height: 350px;
+  overflow: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background-size: 210px 200px;
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  background-position-y: 50px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+}
+.--spacing {
+  margin-left: 2.5rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carta-imagem {
+  border: 1px solid black;
+  height: 100px;
+  margin: 10px;
+}
+
+.carta-imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.carta-status {
+  height: 70px;
+  margin: 1rem;
+  color: black;
+  z-index: 1;
+}
+
+.carta-status input {
+  margin: 2px 0px;
+}
+
+.carta-subtitle {
+  z-index: 2;
+  position: absolute;
+  top: 8px;
+  left: 21px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+#cartas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carta-status p {
+  margin-bottom: 1rem;
+  margin: -2px 2px;
+}
+
+.atkJ #carta-jogador {
+  box-shadow: 2px 2px 8px skyblue, -2px -2px 8px skyblue;
+}
+
+.atkM #carta-maquina {
+  box-shadow: 2px 2px 8px skyblue, -2px -2px 8px skyblue;
+}
+
+.retorna #carta-jogador {
+  box-shadow: none;
+}
+
+.retorna #carta-maquina {
+  box-shadow: none;
+}
+
+.icone {
+  width: 100px;
+  animation: gira 4s linear 4s forwards;
+  opacity: 0;
+}
+
+@keyframes gira {
+  to {
+    transform: rotate(720deg);
+    opacity: 1;
+  }
+}

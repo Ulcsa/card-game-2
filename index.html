@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Super Trunfo - Dia 7</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <title>
+    Imersão Dev - Aula 07
+  </title>
+</head>
+<div class="container">
+  <h1 class="page-title">Super Trunfo</h1>
+  <h2>Yu-Gi-Oh!</h2>
+  <img class="icone" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/03b5a34c-d066-4223-ae94-21c906adb0bc/dbkx9uv-caab9e78-aa7b-4f7d-ade4-4761742d0481.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAzYjVhMzRjLWQwNjYtNDIyMy1hZTk0LTIxYzkwNmFkYjBiY1wvZGJreDl1di1jYWFiOWU3OC1hYTdiLTRmN2QtYWRlNC00NzYxNzQyZDA0ODEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SR9Ej6Xd4A6zOjQEWNu0V-KI86UmP6oRdLz5d0rGmYo">
+
+  <body>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+    <form id="form">
+      <div class="wrapper">
+        <div>
+          <div id="carta-jogador">
+            <img src="https://cdn.shopify.com/s/files/1/1425/8892/products/KON74145--Yu-Gi-Oh-Card-Back-Sleeves-50ct_da77d52d-fbd1-472c-8d87-243660b780ff_grande.jpg?v=1585643869" style=" width: inherit; height: inherit; position: absolute;">
+          </div>
+        </div>
+        <div>
+          <br><br><br>
+          <button onclick="start()" id="btnStart">Start</button><br><br>
+          <button onclick="sortearCarta()" id="btnSortear" disabled="false">Puxar carta</button>
+          <p id="vitoriaDerrota"></p>
+          <button type="button" id="btnJogar" onclick="duelar()" disabled="false">Batalhar</button><br><br>
+          <p class="resultado" id="resultado"></p>
+        </div>
+        <div>
+          <div id="carta-maquina" class="carta"><img src="https://cdn.shopify.com/s/files/1/1425/8892/products/KON74145--Yu-Gi-Oh-Card-Back-Sleeves-50ct_da77d52d-fbd1-472c-8d87-243660b780ff_grande.jpg?v=1585643869" style=" width: inherit; height: inherit; position: absolute;"></div>
+        </div>
+      </div>
+      <div class="opcoes" id="opcoes"></div>
+      <button id="reiniciar" type="button" onclick="recomecar()" disabled="false">Reiniciar</button>
+    </form>
+    <audio id="trilha" loop>
+      <source src="https://www.televisiontunes.com/uploads/audio/Yu-Gi-Oh%20-%20Sound%20Duel%201%20-%20Passionate%20Duelist.mp3">
+    </audio>
+    <audio id="ataque">
+      <source src="https://freesound.org/data/previews/319/319590_5436764-lq.mp3">
+    </audio>
+</div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
